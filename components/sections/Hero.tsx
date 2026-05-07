@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Hero() {
   const rows = ["outline", "outline", "solid", "outline", "outline"] as const;
 
@@ -76,7 +77,10 @@ export default function Hero() {
           priority
         />
       </div>
+      
 
     </section>
+
+
   );
 }
