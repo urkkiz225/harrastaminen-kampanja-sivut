@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   const rows = ["outline", "outline", "solid", "outline", "outline"] as const;
@@ -74,6 +78,26 @@ export default function Hero() {
       {/* Oranssi laatikko (vain desktop — peittäisi tekstin mobiilissa) */}
       <div className="hidden md:block absolute bg-accent z-10"
            style={{ width: "22vw", height: "32vh", right: 0, bottom: 0 }} />
+
+      {/* Aikataulu-nuoli */}
+      <motion.a
+        href=""
+        aria-label="Katso viikon aikataulu"
+        className="relative mt-8 mb-10 mx-auto flex flex-col items-center gap-2 z-30
+                   md:absolute md:mt-0 md:mb-0 md:mx-0 md:left-[50%] md:bottom-8"
+        animate={{ y: [0, -14, 0, -8, 0, -3, 0, 0] }}
+        transition={{
+          duration: 30,
+          times: [0, 0.015, 0.035, 0.05, 0.07, 0.085, 0.1, 1],
+          repeat: Infinity,
+          ease: "easeOut",
+        }}
+      >
+        <span className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-text">
+          <ArrowDown className="w-5 h-5 text-text" strokeWidth={2.5} />
+        </span>
+        <span className="font-heading font-bold text-text text-sm">Katso viikon aikataulu</span>
+      </motion.a>
 
       {/* Teksti */}
       <div className="relative px-6 pb-12 mt-6 flex flex-col gap-6
