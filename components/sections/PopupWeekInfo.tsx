@@ -22,7 +22,7 @@ export default function PopupWeekInfo() {
     ))}
   </div>
   {/*ympyr*/}
-  <div className="absolute right-[-20px] bottom-[-20px] w-36 h-36 bg-accent rounded-full flex flex-col items-center justify-center text-center p-4 cursor-pointer scale-[1.4]">
+  <div className="absolute md:right-[-20px] md:bottom-[-20px] w-36 h-36 bg-accent rounded-full flex flex-col items-center justify-center text-center p-4 cursor-pointer sm:scale-[1.3] md:scale-[1.4]">
     <p onClick = {()=>{console.log("waow! career game :sunglases:")}} className="font-heading font-bold text-text text-sm leading-tight">
       "mikä näistä sopis mulle?"
     </p>
