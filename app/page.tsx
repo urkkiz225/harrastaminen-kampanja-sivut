@@ -4,6 +4,7 @@ import Quotes from "../components/sections/Julkkisquotes";
 import PopupPage from "../components/sections/PopupPage";
 import Kokeilukone from "../components/sections/Gamestart";
 import Essee from "../components/sections/Essee";
+import Kokeilukone from "@/components/sections/Gamestart";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Essee />
       <Kokeilukone />
       <FooterCom />
+      <Kokeilukone></Kokeilukone>
     </main>
   );
 }

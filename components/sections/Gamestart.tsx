@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Kokeilukone() {
   return (
     <section id="kokeilukone" className="relative min-h-screen bg-[#F7F3EE] flex flex-col items-center pt-20 px-6 pb-12 overflow-hidden">
@@ -36,9 +36,12 @@ export default function Kokeilukone() {
 
       {/* Painike */}
       <div className="w-full max-w-4xl mt-12 z-10">
-        <button className="w-full bg-[#E63946] hover:bg-[#C93542] text-[#F7F3EE] font-heading font-bold text-[8vw] md:text-[65px] py-6 md:py-8 transition-colors shadow-sm">
+        <Link
+          href="/kokeile"
+          className="block w-full text-center bg-[#E63946] hover:bg-[#C93542] text-[#F7F3EE] font-heading font-bold text-[8vw] md:text-[65px] py-6 md:py-8 transition-colors shadow-sm"
+        >
           Käynnistä kone
-        </button>
+        </Link>
       </div>
 
     </section>
