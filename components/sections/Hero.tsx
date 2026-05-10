@@ -3,13 +3,14 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowDown } from "lucide-react";
+import Burger from "./Burger";
 
 
 export default function Hero() {
   const rows = ["outline", "outline", "solid", "outline", "outline"] as const;
 
   return (
-    <section className="relative min-h-screen md:h-screen overflow-hidden bg-bg">
+    <section id="etusivu" className="relative min-h-screen md:h-screen overflow-hidden bg-bg">
 
       {/* POP UP -teksti (mobiili) */}
       <div className="md:hidden absolute top-4 left-6 z-20 font-heading font-bold text-text text-sm leading-tight">
@@ -18,7 +19,7 @@ export default function Hero() {
       </div>
 
       {/* Helsinki logo */}
-      <div className="absolute top-4 right-4 md:top-6 md:right-6 z-20">
+      <div className="fixed top-4 right-4 md:top-6 md:right-6 z-[60] flex items-center gap-4">
         <Image
           src="/images/helsinki.png"
           alt="Helsinki"
@@ -26,6 +27,8 @@ export default function Hero() {
           height={60}
           className="object-contain w-24 md:w-[120px] h-auto"
         />
+
+        <Burger />
       </div>
 
       {/* Kokeile stäkki */}

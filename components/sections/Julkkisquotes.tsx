@@ -9,7 +9,7 @@ export default function Quotes() {
 
     return (
 
-        <section className="relative w-full max-w-7xl mx-auto py-20 px-10 bg-[#F7F3EE] min-h-[600px] pb-[200px]">
+        <section id="henkilotarinat" className="relative w-full max-w-7xl mx-auto py-20 px-10 bg-[#F7F3EE] min-h-[600px] pb-[200px]">
 {/* Muodot ja kuva */}
             <div className="absolute top-10 left-[20%] w-[500px] h-[400px] bg-gradient-to-b from-[#D34A54] to-[#EBC8B4] opacity-80 z-0" />
 
