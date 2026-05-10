@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowDown } from "lucide-react";
 
+
 export default function Hero() {
   const rows = ["outline", "outline", "solid", "outline", "outline"] as const;
 
@@ -74,6 +75,7 @@ export default function Hero() {
           priority
         />
       </div>
+      
 
       {/* Oranssi laatikko (vain desktop — peittäisi tekstin mobiilissa) */}
       <div className="hidden md:block absolute bg-accent z-10"
@@ -123,5 +125,7 @@ export default function Hero() {
       </div>
 
     </section>
+
+
   );
 }
