@@ -37,18 +37,19 @@ export default function Burger() {
           transform: open ? "translateX(0)" : "translateX(100%)",
         }}
       >
-        {/* X-nappi */}
+        {/* X-sulkunappi */}
         <div className="flex justify-start mb-8">
           <button
             onClick={() => setOpen(false)}
-            className="flex items-center justify-center w-10 h-10"
-            style={{ border: "none", cursor: "pointer", backgroundColor: "transparent" }}
-            aria-label="Sulje valikko"
-          >
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="2" y1="2" x2="20" y2="20" stroke="black" strokeWidth="2" strokeLinecap="round"/>
-              <line x1="20" y1="2" x2="2" y2="20" stroke="black" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
+            className="h-10 text-4xl"
+            style={{
+              border: "none",
+              backgroundColor: "transparent",
+              cursor: "pointer",
+          }}
+          aria-label="Sulje valikko"
+        >
+          x
           </button>
         </div>
  
