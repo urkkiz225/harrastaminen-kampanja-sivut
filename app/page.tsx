@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <PopupPage />
+      <span className = "mt-[50px]">
+        <PopupPage/>
+      </span>
     </main>
   );
 }
