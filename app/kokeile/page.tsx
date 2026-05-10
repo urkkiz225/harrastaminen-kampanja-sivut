@@ -31,7 +31,7 @@ export default function KokeilukonePage() {
       </Link>
 
       <h1 className="text-center font-heading font-black text-text text-2xl md:text-4xl leading-tight max-w-2xl mx-auto mt-8">
-        Vastaa jokaiseen kysymykseen ja löydä uusi kokeilu!
+        Vastaa jokaiseen kysymykseen ja löydä uusi harrastus!
       </h1>
 
       <div className="mt-12 flex flex-col items-center gap-10 max-w-2xl mx-auto">

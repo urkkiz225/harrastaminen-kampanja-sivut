@@ -3,8 +3,8 @@ export const CATEGORIES = [
   { id: "location",   a: "Ulkona",        b: "Sisällä" },
   { id: "intensity",  a: "Urheilua",      b: "Kevyttä" },
   { id: "cost",       a: "Ilmaista",      b: "Maksullista" },
-  { id: "style",      a: "Luovaa",        b: "Selkeää" },
-  { id: "commitment", a: "Omistautumista", b: "Matala kynnys" },
+  { id: "style",      a: "Luovaa",        b: "Strukturoitua" },
+  { id: "commitment", a: "Säännöllistä", b: "Satunnaista" },
 ];
 
 export const HOBBIES = [
