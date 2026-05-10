@@ -109,15 +109,17 @@ export default function Hero() {
                       md:absolute md:right-0 md:top-15 md:w-[50%] md:pl-8 md:p-0 md:mt-0 md:gap-0 z-10">
         <p className="font-heading font-bold text-text leading-snug
                       text-xl md:text-[34px] xl:text-[40px]">
-          Arki vaatii paljon –<br />
-          harrastuksen ei tarvitse.<br />
+         <span className="text-secondary">
+          Entä, jos harrastus<br />
+          ei tarvitse syytä?<br />
+          </span>
           Löydä tekemisen ilo ja kokeile<br />
           jotain ihan uutta.
         </p>
         <p className="font-heading font-bold text-text
                       text-xl md:text-[34px] xl:text-[40px] md:mt-6">
           Tule mukaan{" "}
-          <a href="#events" className="text-secondary underline underline-offset-2">
+          <a href="#events" className="text-text underline underline-offset-2 hover:text-secondary transition-colors">
             tapahtumaviikkollemme.
           </a>
           <span className="hidden md:inline">
