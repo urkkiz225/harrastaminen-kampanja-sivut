@@ -18,7 +18,7 @@ type Event = {
 };
 const events: Record<number, Event[]> = {
   0: [//ma
-    { time: "09.00 - 10.00", title: "Aamujooga", desc: "Aloita päivä rauhassa ja hyvässä seurassa!", location: "Kallion joogahalli", color: "bg-secondary", address: "PLACEHOLDER ADDRESS", addressURL: "PLACEHOLDER URL", extendedDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+    { time: "09.00 - 10.00", title: "Aamujooga", desc: "Aloita päivä rauhassa ja hyvässä seurassa!", location: "Kallion joogahalli", color: "bg-secondary", address: "PLACEHOLDER ADDRESS", addressURL: "https://maps.app.goo.gl/bhsS5cWiukXpEUg2A", extendedDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
     { time: "14.00 - 16.00", title: "Kaupunkiviljely", desc: "Tervetuloa painamaan kädet multaan keskellä kaupunkia!", location: "Vallilan kaupunkipuutarha", color: "bg-accent", address: "PLACEHOLDER ADDRESS", addressURL: "PLACEHOLDER URL", extendedDesc: "EXTENDED DESC PLACEHOLDER" },
     { time: "18.00 - 20.00", title: "Keramiikkapaja", desc: "Luo omilla käsilläsi ja nauti hetkestä.", location: "Arabian taidekeskus",  color: "bg-secondary/70", address: "PLACEHOLDER ADDRESS", addressURL: "PLACEHOLDER URL", extendedDesc: "EXTENDED DESC PLACEHOLDER" }
   ],
@@ -73,8 +73,7 @@ export default function DaySchedule() {
   const prevDay = () => setActiveDay(i => (i - 1 + days.length)%days.length);
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   return (
-
-    <div className="w-full -px-[100px] py-10 justify-items-center text-center">
+    <div id = "events" className="w-full -px-[100px] py-10 justify-items-center text-center">
       <h2 className="w-30% mx-auto font-heading font-black leading-[0.8] text-center mt-[100px] mb-[5px]">
       <span className="block min-w-[10vw] text-[clamp(55px,5.5vw,90px)] sm:text-left md:text-left">POP UP</span>
       <span className="block min-w-[14vw] text-[clamp(40px,3vw,70px)] sm:text-center md:text-right">-viikko</span>
@@ -131,45 +130,49 @@ export default function DaySchedule() {
           </motion.div>
         ))}
       </motion.div>
-      {/*pop up description kortti*/}
     </AnimatePresence>
-        <AnimatePresence>
-        {selectedEvent && (
-        <>
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 40 }}
-              transition={{ duration: 0.2 }}
-              className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[90%] max-w-md border-4 border-solid border-red-500 overflow-hidden shadow-xl`}
-            >
-              <div className="bg-secondary red-600 p-6">
-                <h2 className="font-heading font-black text-bg text-4xl leading-tight">
-                  {selectedEvent.title}
-                </h2>
+    {/*pop up description kortti*/}
+    <AnimatePresence>
+      {selectedEvent && (
+      <>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.2 }}
+            className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-[90%] max-w-md border-4 border-solid border-secondary overflow-hidden shadow-[0_0px_40px_rgba(0,0,0,0.6)]`}
+          >
+            <div className="bg-secondary p-6">
+              <h2 className="font-heading font-black text-bg sm:text-2xl md:text-4xl leading-tight">
+                {selectedEvent.title}
+              </h2>
+            </div>
+            <div className="bg-bg p-6 flex flex-col gap-6 ">
+              <p className="text-text/80 leading-relaxed">{selectedEvent.extendedDesc}</p>
+              <div>
+                <p className="font-heading font-black text-text text-4xl">Milloin?</p>
+                <p className="text-text mt-1">{days[activeDay].split(" ")[1] /*hommaa päivämäärän suoraa valitust päiväst*/} · {selectedEvent.time}</p>
               </div>
-              <div className="bg-bg p-6 flex flex-col gap-6">
-                <p className="text-text/80 leading-relaxed">{selectedEvent.extendedDesc}</p>
-                <div>
-                  <p className="font-heading font-black text-text text-2xl">Milloin?</p>
-                  <p className="text-text mt-1">{days[activeDay].split(" ")[1] /*hommaa päivämäärän suoraa valitust päiväst*/} · {selectedEvent.time}</p>
-                </div>
-                <div>
-                  <p className="font-heading font-black text-text text-2xl">Missä?</p>
-                  {selectedEvent.location}
-                  {selectedEvent.address}
-                </div>
-                <button
-                  onClick={() => setSelectedEvent(null)}
-                  className="mt-2 w-full py-3 rounded-xl bg-secondary text-bg font-heading font-bold"
-                >
-                  Sulje
-                </button>
+              <div>
+                <p className="font-heading font-black text-text text-4xl">Missä?</p>
+                {selectedEvent.location}
+                <p>
+                  <a className="text-text underline underline-offset-2" 
+                  href = {selectedEvent.addressURL} 
+                  target="_blank"
+                  rel="noopener noreferrer">
+                {selectedEvent.address}
+                </a>
+                </p>
               </div>
-            </motion.div>
-        </>
-        )}
-      </AnimatePresence>
+              <button onClick={() => setSelectedEvent(null)} className="mt-2 w-full py-3 rounded-xl bg-secondary text-bg font-heading font-bold">
+                Sulje
+              </button>
+            </div>
+          </motion.div>
+      </>
+      )}
+    </AnimatePresence>
     </div>
   );
 }
