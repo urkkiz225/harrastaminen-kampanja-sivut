@@ -1,10 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/julkkisquotes
 export default function Kokeilukone() {
   return (
     <section id="kokeilukone" className="relative min-h-screen bg-[#F7F3EE] flex flex-col items-center pt-20 px-6 pb-12 overflow-hidden">

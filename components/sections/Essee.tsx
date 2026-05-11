@@ -41,7 +41,7 @@ export default function EssayBox() {
       `}</style>
 
       {/* Ulompi säiliö, keskitetty */}
-      <div className="mt-10" style={{ width: "calc(100% - 24vw)", marginLeft: "12vw", marginRight: "12vw" }}>
+      <div className="mt-15" style={{ width: "calc(100% - 24vw)", marginLeft: "12vw", marginRight: "12vw" }}>
         {/* Oranssi kortti-boksi */}
         <div
           className="rounded-2xl pt-7 pb-6 relative overflow-hidden"
@@ -49,7 +49,7 @@ export default function EssayBox() {
         >
           {/* Otsikko */}
           <h2 className="font-heading font-black text-text text-2xl md:text-4xl mb-4 text-center">
-            Miksi harrastukset ovat tärkeä osa elämää?
+            Mitä sä harrastat? Miten sä harrastat?
           </h2>
 
           <div className="relative px-6 md:px-10">
