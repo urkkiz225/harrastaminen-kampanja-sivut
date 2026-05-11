@@ -23,9 +23,9 @@ export default function Burger() {
         style={{border: "none", cursor: "pointer", backgroundColor: "transparent"}}
         aria-label="Avaa valikko"
       >
-        <div className="w-7 h-0.5 bg-text rounded-full" />
-        <div className="w-7 h-0.5 bg-text rounded-full" />
-        <div className="w-7 h-0.5 bg-text rounded-full" />
+        <span className="w-7 h-0.5 bg-text rounded-full" />
+        <span className="w-7 h-0.5 bg-text rounded-full" />
+        <span className="w-7 h-0.5 bg-text rounded-full" />
       </button>
  
       {/* Tumma tausta koko näytölle, kun valikko on auki */}

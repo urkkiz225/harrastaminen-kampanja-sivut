@@ -11,6 +11,7 @@ export default function Hero() {
 
   return (
     <section id="etusivu" className="relative min-h-screen md:h-screen overflow-hidden bg-bg">
+      <h2 className="sr-only">Etusivu</h2>
 
       {/* POP UP -teksti (mobiili) */}
       <div className="md:hidden absolute top-4 left-6 z-20 font-heading font-bold text-text text-sm leading-tight">
@@ -69,7 +70,7 @@ export default function Hero() {
       <div className="relative -mt-20 mx-auto w-[75vw] h-[80vw] flex items-end justify-center z-20
                       md:absolute md:mt-0 md:mx-0 md:left-[28%] md:bottom-0 md:w-[24vw] md:h-[45vh]">
         <Image
-          src="/images/skateboard 1.png"
+          src="/images/skateboard-1.png"
           alt="Skateboarder"
           fill
           className="object-contain object-bottom"
