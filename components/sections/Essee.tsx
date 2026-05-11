@@ -36,7 +36,7 @@ export default function EssayBox() {
         }
         .word-animation {
           opacity: 0;
-          animation: wordFade 0.2s ease-out forwards;
+          animation: wordFade 0.1s ease-out forwards;
         }
       `}</style>
 
@@ -66,7 +66,7 @@ export default function EssayBox() {
                       <span
                         key={i}
                         className="word-animation"
-                        style={{animationDelay: (i * 30) + "ms"}}
+                        style={{animationDelay: (i * 10) + "ms"}}
                       >
                         {word}{" "}
                       </span>
