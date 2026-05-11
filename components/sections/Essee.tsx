@@ -28,18 +28,8 @@ export default function EssayBox() {
 
   return (
     <>
-      {/* Jokainen sana fadee näkyviin viiveellä */}
-      <style>{`
-        @keyframes wordFade {
-          from {opacity: 0;}
-          to   {opacity: 1;}
-        }
-        .word-animation {
-          opacity: 0;
-          animation: wordFade 0.1s ease-out forwards;
-        }
-      `}</style>
-
+      {/* Jokainen sana fadee näkyviin viiveellä // SIIRRETTY GLOBAL CSS */}
+     
       {/* Ulompi säiliö, keskitetty */}
       <div className="mt-15" style={{ width: "calc(100% - 24vw)", marginLeft: "12vw", marginRight: "12vw" }}>
         {/* Oranssi kortti-boksi */}
