@@ -21,14 +21,15 @@ export default function Hero() {
 
       {/* Helsinki logo */}
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-[60] flex items-center gap-4">
-        <Image
-          src="/images/helsinki.png"
-          alt="Helsinki"
-          width={120}
-          height={60}
-          className="object-contain w-24 md:w-[120px] h-auto"
-        />
-
+        <a href = "https://hel.fi" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/images/helsinki.png"
+            alt="Helsinki"
+            width={120}
+            height={60}
+            className="object-contain w-24 md:w-[120px] h-auto"
+          />
+        </a>
         <Burger />
       </div>
 

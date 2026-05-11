@@ -22,15 +22,15 @@ const FooterCom = () => {
         {/* Logo ja linkit */}
                 <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
                     <div>
-                    <Image 
-                        src="/images/helsinkiwhite.png" 
-                        alt="Helsinki" 
-                        width={120} 
-                        height={60} 
-                        className="object-contain" />
+                    <a href = "https://hel.fi" target="_blank" rel="noopener noreferrer">
+                        <Image 
+                            src="/images/helsinkiwhite.png" 
+                            alt="Helsinki" 
+                            width={120} 
+                            height={60} 
+                            className="object-contain" />
+                    </a>
                     </div>
-
-
                 {/* Linkit */}
                     <div className="flex flex-col md:flex-row flex-wrap gap-4 md:gap-8 px-0 md:px-10">
                     <Link
