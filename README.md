@@ -1,3 +1,10 @@
+## Linkit Figmaan ja nettisivulle
+
+https://www.figma.com/design/LbulyX2eo0dC68eDuIGhoa/VDM-nettisivu-design-yms-tms?node-id=131-2&t=GoIlsrNdWr5UueUI-1
+
+https://harrastaminen-kampanja-sivut.vercel.app/
+
+
 ## Tehtävät ja työtunnit
 
 **Daniel:** 
@@ -21,7 +28,7 @@ työtunnit:
 
 tehtävät: Pelin ideointi ja design; pelin aloitussivun koodaus; reflektiot; essee; loppugaalan esitelmä
 
-työtunnit: 10h
+työtunnit: 12h
 
 **Maria:** 
 
