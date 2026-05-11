@@ -41,7 +41,7 @@ export default function EssayBox() {
       `}</style>
 
       {/* Ulompi säiliö, keskitetty */}
-      <div className="mt-15" style={{ width: "calc(100% - 24vw)", marginLeft: "12vw", marginRight: "12vw" }}>
+      <div className="mt-14" style={{ width: "calc(100% - 24vw)", marginLeft: "12vw", marginRight: "12vw" }}>
         {/* Oranssi kortti-boksi */}
         <div
           className="rounded-2xl pt-7 pb-6 relative overflow-hidden"
