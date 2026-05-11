@@ -16,7 +16,8 @@ export default function KokeilukonePage() {
   // Tarkistetaan onko kaikkiin kysymyksiin vastattu
   const allAnswered = Object.keys(answers).length === CATEGORIES.length;
   // Jos kaikki vastattu, etsitään paras harrastus logiikalla
-  const hobby = allAnswered ? findBestHobby(Object.values(answers), HOBBIES) : null;
+  const orderedAnswers = CATEGORIES.map((_, i) => answers[i]);
+  const hobby = allAnswered ? findBestHobby(orderedAnswers, HOBBIES) : null;
 
   // Tyhjentää kaikki vastaukset ja aloittaa alusta
   const reset = () => setAnswers({});
