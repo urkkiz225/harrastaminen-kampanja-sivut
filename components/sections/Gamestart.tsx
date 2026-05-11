@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Kokeilukone() {
   return (
-    <section className="relative min-h-screen bg-[#F7F3EE] flex flex-col items-center pt-20 px-6 pb-12 overflow-hidden">
+    <section id="kokeilukone" className="relative min-h-screen bg-[#F7F3EE] flex flex-col items-center pt-20 px-6 pb-12 overflow-hidden">
       
 
       {/* Otsikko */}
