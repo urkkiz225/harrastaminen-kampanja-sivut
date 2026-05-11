@@ -6,6 +6,7 @@ import { ArrowDown } from "lucide-react";
 import Burger from "./Burger";
 
 
+
 export default function Hero() {
   const rows = ["outline", "outline", "solid", "outline", "outline"] as const;
 
