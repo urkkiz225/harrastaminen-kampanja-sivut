@@ -14,8 +14,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Liiku! – Kampanja nuorille",
-  description: "Kampanja, joka kannustaa nuoria liikkumaan enemmän ja löytämään oman juttunsa.",
+  title: "Kokeile – Kampanja harrastamisen itseisarvon puolesta",
+  description: "'Kokeile. Entä, jos harrastaminen ei tarvitse syytä?' on kampanja, joka rohkaisee nuoria aikuisia kokeilemaan harrastuksia ilman suorituspaineita. Harrastamisen ei tarvitse olla hyödyllistä — tekemisen ilo riittää.",
 };
 
 export default function RootLayout({

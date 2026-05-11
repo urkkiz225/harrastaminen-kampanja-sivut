@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +20,7 @@ const FooterCom = () => {
         
             <div className="bg-[#E63946] p-8 flex flex-col gap-8">
         {/* Logo ja linkit */}
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
                     <div>
                     <Image 
                         src="/images/helsinkiwhite.png" 
@@ -33,28 +32,28 @@ const FooterCom = () => {
 
 
                 {/* Linkit */}
-                    <div className="flex gap-8 px-10">
+                    <div className="flex flex-col md:flex-row flex-wrap gap-4 md:gap-8 px-0 md:px-10">
                     <Link
                         href="https://www.hel.fi"
-                        className="underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-[20px];">
+                        className="underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-sm md:text-base lg:text-lg;">
                         Kaupungin nettisivut
                     </Link>
 
                     <Link
                         href="https://www.instagram.com/helsinki/"
-                        className="underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-[20px];">
+                        className="underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-sm md:text-base lg:text-lg;">
                         Instagram
                     </Link>
 
                     <Link
                         href="https://www.facebook.com/helsinginkaupunki"
-                        className=" underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-[20px];">
+                        className=" underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-sm md:text-base lg:text-lg;">
                         Facebook
                     </Link>
 
                     <Link
                         href="https://palautteet.hel.fi/"
-                        className=" underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-[20px];">
+                        className=" underline text-[#F7F3EE] hover:text-[#F4A261] font-bold text-sm md:text-base lg:text-lg;">
                         Anna palautetta
                     </Link>
                     </div>
