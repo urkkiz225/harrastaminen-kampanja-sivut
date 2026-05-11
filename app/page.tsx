@@ -7,7 +7,7 @@ import Kokeilukone from "@/components/sections/Gamestart";
 
 export default function Home() {
   return (
-     <main>
+    <main>
       <Hero />
       <PopupPage />
       <Quotes />
