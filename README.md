@@ -11,7 +11,7 @@ https://harrastaminen-kampanja-sivut.vercel.app/
 
 tehtävät: UI:n visuaalisen kielen vaihtoehtojen luonti; Hero page; Harrastuspeli; Ylipäätään folder struktuurin hahmotus projektille; favicon;
 
-työtunnit: 8.5 h
+työtunnit: 14 h
 
 **Sara:** 
 
@@ -30,7 +30,7 @@ työtunnit:
 
 tehtävät: Pelin ideointi ja design; pelin aloitussivun koodaus; reflektiot; essee; loppugaalan esitelmä
 
-työtunnit: 12h
+työtunnit: n. 20h
 
 **Maria:** 
 
