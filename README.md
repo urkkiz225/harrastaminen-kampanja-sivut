@@ -22,7 +22,7 @@ työtunnit: 22h
 **Urho:** 
 tehtävät: Wireframe; GitHub repon ja collabin pystyttäminen; Projektin setuppaaminen; Popup-viikon aikataulun koodaus (DaySchedule.tsx, PopupPage.tsx, PopupWeekInfo.tsx); Harrastusten alkuperäisten tekstien teko ja lopullisten harrastuksien lisääminen viikkoaikatauluun pe-su; Jokaisen branchin mergaaminen mainiin; Vercel deployment; Bugien ja pikku unohdusten korjailua; Lopullinen palautus
 
-työtunnit: n. 18h
+työtunnit: 18.5h
 
 **Ilja:** 
 

@@ -89,7 +89,7 @@ export default function DaySchedule() {
             <button key={i} onClick={() => setActiveDay(i)}
               className={`
                 px-1 py-3 rounded-xl font-heading font-bold text-bg text-sm sm:text-lg transition-all
-                ${activeDay === i ? "bg-secondary" : "bg-secondary/40"}
+                ${activeDay === i ? "bg-secondary" : "bg-secondary/71.5"}
               `}
             >
               {day}

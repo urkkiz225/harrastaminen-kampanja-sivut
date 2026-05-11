@@ -35,5 +35,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .word-animation {
   opacity: 0;
-  animation: wordFade 0.3s ease-out forwards;
+  animation: wordFade 0.1s ease-out forwards;
 }

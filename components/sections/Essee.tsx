@@ -50,13 +50,13 @@ export default function EssayBox() {
             >
               {open ? (
                 // Boksi auki --> jokainen sana on oma span, animationDelay kasvaa sana sanalta
-                <div className="max-w-3xl mx-auto">
+                <div className="max-w-3xl mx-auto text-xl">
                   <p key={animation} className="whitespace-pre-wrap text-justify">
                     {words.map((word, i) => (
                       <span
                         key={i}
                         className="word-animation"
-                        style={{animationDelay: (i * 10) + "ms"}}
+                        style={{animationDelay: (i * 7) + "ms"}}
                       >
                         {word}{" "}
                       </span>
@@ -65,8 +65,8 @@ export default function EssayBox() {
                 </div>
               ) : (
                 // Boksi kiinni --> teksti näytetään normaalisti, häivytys peittää alaosan
-                <div className="max-w-3xl mx-auto">
-                  <p className="whitespace-pre-line text-justify">{essayText}</p>
+                <div className="max-w-3xl mx-auto text-xl">
+                  <p className="whitespace-pre-line text-justify text-xl">{essayText}</p>
                 </div>
               )}
             </div>
