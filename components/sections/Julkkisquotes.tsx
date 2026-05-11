@@ -9,7 +9,7 @@ export default function Quotes() {
 
     return (
 
-        <section id="henkilotarinat" className="relative w-full max-w-7xl mx-auto pt-28 mt-70 sm:mt-44 md:mt-32 mb-10 sm:mb-24 md:mb-32 lg:mt-40 pb-0 lg:pt-48 lg:pb-[10rem] px-6 bg-[#F7F3EE]">
+        <section id="henkilotarinat" className="relative w-full max-w-7xl mx-auto pt-28 mt-70 sm:mt-44 md:mt-32 lg:mt-[-120] mb-10 sm:mb-24 md:mb-72 pb-0 lg:pt-24 lg:pb-[10rem] px-6 bg-[#F7F3EE]">
 {/* Muodot ja kuva */}
             <div className="absolute top-10 left-[10%] md:left-[20%] w-[70%] md:w-[40%] aspect-square bg-gradient-to-b from-[#D34A54] to-[#EBC8B4] opacity-80 z-0" />
 
