@@ -37,8 +37,11 @@ export default function Result({ hobby, onReset }: Props) {
         {hobby.name}
       </h2>
 
-      <p className="mt-6 font-body text-base md:text-lg opacity-90">
-        ({hobby.attrs.map((a, i) => traitLabel(a, i)).join(", ")})
+      <p className="mt-6 font-body text-sm uppercase tracking-wider opacity-70">
+        Harrastuksen vastaus tyyppi
+      </p>
+      <p className="mt-1 font-body text-base md:text-lg opacity-90">
+        {hobby.attrs.map((a, i) => traitLabel(a, i)).join(", ")}
       </p>
 
       {(hobby.when || hobby.where) && (
