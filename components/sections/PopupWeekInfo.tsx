@@ -22,13 +22,14 @@ export default function PopupWeekInfo() {
     ))}
   </div>
   {/*ympyr*/}
+  <a href = "/kokeile" target="_blank" rel="noopener noreferrer">
   <div className="absolute md:right-[-20px] md:bottom-[-20px] w-36 h-36 bg-accent rounded-full flex flex-col items-center justify-center text-center p-4 cursor-pointer sm:scale-[1.3] md:scale-[1.4]">
-    <p onClick = {()=>{console.log("waow! career game :sunglases:")}} className="font-heading font-bold text-text text-sm leading-tight">
+    <p className="font-heading font-bold text-text text-sm leading-tight">
       "mikä näistä sopis mulle?"
     </p>
     <span className="text-text font-black text-xl mt-1">→</span>
   </div>
-    {/*aaghh todo korjaa ympyrän positioni pienemmillä laitteilla*/}
+  </a>
 </div>
   );
 }
