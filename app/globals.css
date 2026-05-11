@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), sans-serif;
 }
 
-html {
-  scroll-behavior:smooth;
+@keyframes wordFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.word-animation {
+  opacity: 0;
+  animation: wordFade 0.3s ease-out forwards;
 }

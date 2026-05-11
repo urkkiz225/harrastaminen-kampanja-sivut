@@ -16,16 +16,17 @@ export default function KokeilukonePage() {
   // Tarkistetaan onko kaikkiin kysymyksiin vastattu
   const allAnswered = Object.keys(answers).length === CATEGORIES.length;
   // Jos kaikki vastattu, etsitään paras harrastus logiikalla
-  const hobby = allAnswered ? findBestHobby(Object.values(answers), HOBBIES) : null;
+  const orderedAnswers = CATEGORIES.map((_, i) => answers[i]);
+  const hobby = allAnswered ? findBestHobby(orderedAnswers, HOBBIES) : null;
 
   // Tyhjentää kaikki vastaukset ja aloittaa alusta
   const reset = () => setAnswers({});
 
   return (
-    <main className="min-h-screen bg-bg px-6 py-16">
+    <main className="min-h-screen bg-bg px-6 py-8">
       <Link
         href="/"
-        className="font-heading font-bold text-text underline underline-offset-4"
+        className="font-heading font-bold text-2xl underline underline-offset-4"
       >
         Takaisin
       </Link>
