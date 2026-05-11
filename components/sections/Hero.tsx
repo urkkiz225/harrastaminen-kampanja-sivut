@@ -120,7 +120,7 @@ export default function Hero() {
                       text-xl md:text-[34px] xl:text-[40px] md:mt-6">
           Tule mukaan{" "}
           <a href="#events" className="text-text underline underline-offset-2 hover:text-secondary transition-colors">
-            tapahtumaviikkollemme.
+            tapahtumaviikollemme.
           </a>
           <span className="hidden md:inline">
             <br />
