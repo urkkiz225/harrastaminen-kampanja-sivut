@@ -22,10 +22,10 @@ export default function KokeilukonePage() {
   const reset = () => setAnswers({});
 
   return (
-    <main className="min-h-screen bg-bg px-6 py-16">
+    <main className="min-h-screen bg-bg px-6 py-8">
       <Link
         href="/"
-        className="font-heading font-bold text-text underline underline-offset-4"
+        className="font-heading font-bold text-2xl underline underline-offset-4"
       >
         Takaisin
       </Link>

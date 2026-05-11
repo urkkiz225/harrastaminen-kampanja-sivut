@@ -38,7 +38,7 @@ export default function Result({ hobby, onReset }: Props) {
       </h2>
 
       <p className="mt-6 font-body text-sm uppercase tracking-wider opacity-70">
-        Harrastuksen vastaus tyyppi
+        Harrastuksen vastaustyyppi
       </p>
       <p className="mt-1 font-body text-base md:text-lg opacity-90">
         {hobby.attrs.map((a, i) => traitLabel(a, i)).join(", ")}
