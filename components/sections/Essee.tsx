@@ -36,7 +36,7 @@ export default function EssayBox() {
         }
         .word-animation {
           opacity: 0;
-          animation: wordFade 0.3s ease-out forwards;
+          animation: wordFade 0.2s ease-out forwards;
         }
       `}</style>
 
