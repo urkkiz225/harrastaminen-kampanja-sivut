@@ -27,9 +27,10 @@ työtunnit:
 
 **Maria:** 
 
-tehtävät: 
+tehtävät: Sivuston suunnitteluvaiheessa userflown hahmottelu ja toteutus (Figma), sivuston viikkoaikataulun prototyyppi mobiili- ja desktop-versioina ja niiden muokkailu sisältöideoiden eläessä, myös Figmassa. Lisäksi Figmassa tehtyjä protoja mainoksista, mm. Instagram ja spora. 
+Koodausvastuulla nettisivujen footer sekä sivujen julkkishaastatteluosio tekstibokseineen. Näihin sisällöt myös ja tyylittely ja hionta.
 
-työtunnit:
+työtunnit: n. 20h
 
 ## Projektipäällikkyys ja ajanhallinta
 
