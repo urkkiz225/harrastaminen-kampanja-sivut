@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Tehtävät ja työtunnit
 
-## Getting Started
+**Daniel:** 
 
-First, run the development server:
+tehtävät: UI:n visuaalisen kielen vaihtoehtojen luonti; Hero page; Harrastuspeli; Ylipäätään folder struktuurin hahmotus projektille; favicon;
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+työtunnit: 8.5 h
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Sara:** 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+tehtävät:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+työtunnit:
 
-## Learn More
+**Urho:** 
+tehtävät: 
 
-To learn more about Next.js, take a look at the following resources:
+työtunnit:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Ilja:** 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+tehtävät: 
 
-## Deploy on Vercel
+työtunnit:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Maria:** 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+tehtävät: 
+
+työtunnit:
+
+## Projektipäällikkyys ja ajanhallinta
+
+Miten projektipäällikkyys jaettiin:
+
+Saatiinko hommat ajoissa kasaan vai tuliko kiire:
