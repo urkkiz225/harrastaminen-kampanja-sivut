@@ -42,16 +42,17 @@ export default function Quotes() {
                 onClick={() => setIsOpen(true)}>
                 <div className="absolute left-55 bottom-15 w-30 h-30 bg-gradient-to-b from-[#D34A54] to-[#EBC8B4] rounded-full z-0 transition-transform group-hover:scale-110 opacity-80"/>
                 <button className="relative text-3xl font-bold pb-1">
-                    Lue lisää Niinistön <br /><span className="border-b-3 border-[#1A1A1A] cursor-pointer">harrastusfilosofiasta</span>
-                     
+                    Lue lisää Niinistön <br /><span className="border-b-3 border-[#1A1A1A] cursor-pointer">harrastusfilosofiasta</span>                   
                 </button>
+
             </div>
         </div>
 
-{/* Tekstiboksi */}
+        {/* Tekstiboksi */}
+
         {isOpen && (
             <div className="fixed inset-0 z-[100] flex items-center justify-center">
-                <div className="relative bg-[#F7F3EE] max-w-2xl border-4 border-[#E63946] shadow-2xl flex flex-col min-h-[500px]">
+                <div className="relative bg-[#F7F3EE] w-[90vw] max-w-4xl border-4 border-[#E63946] shadow-2xl flex flex-col">
                     {/* Pinkki detail */}
                     <div className="w-[100%]  h-[20%] min-h-[50px] bg-gradient-to-b from-[#D34A54] to-[#EBC8B4] opacity-80 z-0" />
 
@@ -68,27 +69,34 @@ export default function Quotes() {
                             “Sepä se, ei kai juuri mitenkään. Korkeintaan vetreyttänyt parantaen työkykyä.”
                         </div>
                         <p>Onko kyseessä siis vapaa-ajan intohimoprojekti?</p>
-                         <div className="text-[#E63946] pl-[30%] w-[100%]">
+                         <div className="text-[#E63946] pl-[30%] w-[100%] z-10">
                             “No en ihan sellaiseksikaan sitä kutsuisi. Kunhan vain on jotain mukavaa tekemistä töiden jälkeen. Sanoisin harrastavani ihan vain <div className="text-[#F4A261] inline-block">harrastamisen ilosta.</div> Ei tavoitteita, ei paineita, vain rattoisaa rullailua.”
                         </div>
                     </div>
 {/* Oranssi aalto ja vikat tekstit */}
-                    <div className="text-[#E63946]">
-                        <div className="top-[100px] z-0 -pb-[30%]">
-                            <p>jajaaaaa</p>
-                        </div>
-                        <div className="w-full overflow-hidden leading-[0]">
+                    <div className="relative mt-auto w-full min-h-[130px] flex items-center justify-center bg-[#f8bf91] z-0">
+{/* Oranssi aalto*/}
+                        <div className="absolute top-0 left-0 w-full overflow-visible leading-[0] z-0 transform -translate-y-[40%]">
                             <div className="hds-koros">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="100%" height="70%">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="100%" height="40">
                                 <defs>
                                 <pattern id="korosOrange" x="0" y="0" width="96" height="95" patternUnits="userSpaceOnUse">
-                                        <path fill="#F4A261" transform="scale(3)" d="m0 5v80h32v-80c-8 0-8-5-16-5s-8 5-16 5z" />
+                                        <path fill="#f8bf91" transform="scale(3)" d="m0 5v80h32v-80c-8 0-8-5-16-5s-8 5-16 5z" />
                                 </pattern>
                                 </defs>
-                                <rect fill="url(#korosOrange)" width="100%" height="80"  />
+                                <rect fill="url(#korosOrange)" width="100%" height="40"  />
                                 </svg>  
                             </div>
                         </div>
+                        
+
+                        <div className="text-xl font-bold leading-relaxed text-[#1A1A1A] space-y-4 p-5 z-10">
+                            <p>Miten kannustaisit kansalaisia harrastamaan?</p>
+                            <div className="text-[#E63946] pl-[30%] w-[100%]">
+                             “Ulos vaan. Uutta kokeilemaan. Epäonnistua saa ja pitää, siitäpä sitä oppii. Tärkeintä on tekeminen!”
+                            </div>
+                        </div>
+
                     </div>
 
 
@@ -96,6 +104,8 @@ export default function Quotes() {
             </div>
         
         )}
+
+        
 
     </section>
 
