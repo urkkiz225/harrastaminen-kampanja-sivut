@@ -86,7 +86,7 @@ export default function Hero() {
 
       {/* Aikataulu-nuoli */}
       <motion.a
-        href=""
+        href="#events"
         aria-label="Katso viikon aikataulu"
         className="relative mt-8 mb-10 mx-auto flex flex-col items-center gap-2 z-30
                    md:absolute md:mt-0 md:mb-0 md:mx-0 md:left-[50%] md:bottom-8"
