@@ -8,7 +8,7 @@ export default function PopupWeekInfo() {
     Mikä on Pop up -viikko?
   </h3>
  {/*mikä on pop up viikko hieno gridi shitti description (responsiivisuusmaxxed)*/}
-  <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 pr-0 lg:pr-40 text-xl mt-[55px] mb-[5px]">
+  <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 pr-0 lg:pr-40 text-sm md:text-lg mt-[55px] mb-[5px]">
     {[{ title: "Kokeile vapaasti", desc: "Yksi viikko, kymmeniä tapoja harrastaa.", accent: "bg-secondary" },
       { title: "Ilman sitoutumista", desc: "Osallistu silloin, kun sinulle sopii.", accent: "bg-accent" },
       { title: "Ilman paineita", desc: "Tule juuri sellaisena kuin olet.", accent: "bg-secondary" },

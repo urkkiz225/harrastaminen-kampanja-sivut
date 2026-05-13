@@ -50,7 +50,7 @@ export default function EssayBox() {
             >
               {open ? (
                 // Boksi auki --> jokainen sana on oma span, animationDelay kasvaa sana sanalta
-                <div className="max-w-3xl mx-auto text-xl">
+                <div className="max-w-3xl mx-auto sm:text-md text-xl">
                   <p key={animation} className="whitespace-pre-wrap text-justify">
                     {words.map((word, i) => (
                       <span
